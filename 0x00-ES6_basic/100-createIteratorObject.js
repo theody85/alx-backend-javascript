@@ -1,6 +1,6 @@
 export default function createIteratorObject(report) {
-  let newArr = [];
-  Object.values(report.allEmployees).map((e, idx) => {
+  const newArr = [];
+  Object.values(report.allEmployees).forEach((e) => {
     for (const i of e) {
       newArr.push(i);
     }
